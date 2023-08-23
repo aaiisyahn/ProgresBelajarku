@@ -1,0 +1,10 @@
+// Deklarasi extension function
+fun String.toTitleCase(): String {
+    return this.split(" ").joinToString(" ") { it.capitalize() }
+}
+
+fun main() {
+    val originalString = "hello world"
+    val titleCaseString = originalString.toTitleCase()
+    println(titleCaseString) // Output: Hello World
+}
